@@ -36,6 +36,15 @@ addEvent(document, "resize", function() {
 function makeFaceMove() {
   var elementAndPositionList = [];
 
+  var bunProps = {
+    "elementName": ".bun",
+    "props" : {
+      "left": (40 + (2.5 * horizSliderVal)).toString() + "%",
+      "height": (30 + (2.5 * vertSliderVal)).toString() + "%"
+    }
+  }
+  elementAndPositionList.push(bunProps);
+
   // nose
   var noseProps = {
     "elementName": ".nose",
@@ -161,10 +170,10 @@ function makeFaceMove() {
   elementAndPositionList.push(rightEarProps);
 
   var bangsProps = {
-    "elementName": ".quiff",
+    "elementName": ".bangs",
     "props" : {
-      "left": (50 - (2.5 * horizSliderVal)).toString() + "%",
-      "height": (28 - (2.5 * vertSliderVal)).toString() + "vh"
+      "left": (50 + (2.5 * horizSliderVal)).toString() + "%",
+      "height": (28 + (2.5 * vertSliderVal)).toString() + "vh"
     }
   }
   elementAndPositionList.push(bangsProps);

@@ -32,16 +32,27 @@ body, html {
 }
 
 .head {
+    top: 10%;
     width: 71vh;
     height: 71vh;
 }
 
+.bun {
+    width: 30%;
+    height: 30%;
+    background-color: #1c1206;
+    left: 40%;
+    top: 10%;
+    transform: translate(-50%, -51%);
+    border-radius: 25vh;
+}
+
 .hair {
     width: 45vh;
-    height: 67vh;
+    height: 41vh;
     background-color: #1c1206;
     left: 50%;
-    top: 50%;
+    top: 36%;
     transform: translate(-50%, -51%);
     border-radius: 25vh;
 }
